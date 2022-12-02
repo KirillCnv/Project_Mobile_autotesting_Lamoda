@@ -43,11 +43,11 @@ public class LamodaTest extends TestBase {
         });
         step("Нажать на вкладку  \"Профиль\"", () -> {
             lamodaAndroidTestPage.examinationRateApp();
-        });
+        });Проверка наличия полей регистрации
     }
 
     @Tag("lamoda")
-    @DisplayName("Проверка наличия полей регистрации")
+    @DisplayName("")
     @Test
     void examinationFieldsRegistration() {
         step("Пропустить начальный экран", () -> {

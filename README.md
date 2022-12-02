@@ -32,27 +32,25 @@
 
 ## :memo: Реализованные проверки
 
-- :white_check_mark: Проверка, что поиск выдаёт хотя бы одну статью по запросу.
-- :white_check_mark: Проверка того, что первая выводимая статья та, что нужна по запросу.
-- :white_check_mark: Проверка каждой страницы первичной настройки.
-- :white_check_mark: Проверка пустотности сохранённых статей.
+- :white_check_mark: Проверка вкладки premium.
+- :white_check_mark: Проверка окна "оценки приложения".
+- :white_check_mark: Проверка наличия полей регистрации.
 
-## :man_technologist: Jenkins job
+## :man_technologist: Jenkins
 
-<a target="_blank" href="">Сборка в Jenkins</a>
+<a target="_blank" href="https://jenkins.autotests.cloud/job/LamodaMobileTesting/">Сборка в Jenkins</a>
 <p align="center">
-<img src="images/screen/jenkins_job.png" alt="Jenkins"/>
+<img src="images/screen/jenkins.png" alt="Jenkins"/>
 </p>
 
 ### Параметры сборки в Jenkins:
 
-* test_type (Определят тип запускаемых тестов по Tag'ам)
 * environment (Определят запуск локальный или удалённый)
 
 ### :desktop_computer: Запуск тестов из терминала
 
 ```bash
-gradle clean All
+gradle clean lamodaTest
 ```
 
 ### :globe_with_meridians: Удаленный запуск:
@@ -63,20 +61,22 @@ lamodaTest
 -Denvironment=${ENVIRONMENT}
 ```
 
-## :chart_with_upwards_trend: Отчет в <a target="_blank" href="">Allure report</a>
+## :chart_with_upwards_trend: Отчет в <a target="_blank" href="https://jenkins.autotests.cloud/job/LamodaMobileTesting/allure/#">Allure report</a>
 
-### Основное окно
+
 
 <p align="center">
-<img title="Allure Overview Dashboard" src="">
+<img title="Allure Overview Dashboard" src="images/screen/allureDAshboard.png">
+<img title="Allure Overview Dashboard" src="images/screen/allureSuites.png">
 </p>
 
 ## :bar_chart: Отчет в <a target="_blank" href="">Allure TestOps</a>
 
-### Test Result Tree
+
 
 <p align="center">
-<img title="Allure Test Ops Overview TaskList" src="">
+<img title="Allure Test Ops Overview TaskList" src="images/screen/testOps.png">
+<img title="Allure Test Ops TestCase" src="images/screen/testCAse.png">
 </p>
 
 ## :grapes: Уведомление в Telegram при помощи бота
