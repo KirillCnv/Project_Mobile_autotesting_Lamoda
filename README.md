@@ -82,7 +82,7 @@ lamodaTest
 ## :grapes: Уведомление в Telegram при помощи бота
 
 <p align="center">
-<img title="Allure Overview Dashboard" src="">
+<img title="Allure Overview Dashboard" src="images/screen/telegram.png">
 </p>
 
 ## :film_strip: Пример видео о прохождении тестов
