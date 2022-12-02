@@ -88,5 +88,5 @@ lamodaTest
 ## :film_strip: Пример видео о прохождении тестов
 
 <p align="center">
-<img title="Selenoid Video" src="images/gif/lamodaMobile.gif" width="1080" height="1200"  alt="video">
+<video>src="images/gif/lamodaMobile.mp4"</video>
 </p>
