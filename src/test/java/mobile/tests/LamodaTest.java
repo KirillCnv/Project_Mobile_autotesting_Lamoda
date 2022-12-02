@@ -18,7 +18,7 @@ public class LamodaTest extends TestBase {
     @Tag("lamoda")
     @DisplayName("Проверка вкладки premium")
     @Test
-    void examinationTabGender() {
+    void examinationPremium() {
         step("Пропустить начальный экран", () -> {
             lamodaAndroidTestPage.skipStartMenu();
         });
@@ -43,11 +43,11 @@ public class LamodaTest extends TestBase {
         });
         step("Нажать на вкладку  \"Профиль\"", () -> {
             lamodaAndroidTestPage.examinationRateApp();
-        });Проверка наличия полей регистрации
+        });
     }
 
     @Tag("lamoda")
-    @DisplayName("")
+    @DisplayName("Проверка наличия полей регистрации")
     @Test
     void examinationFieldsRegistration() {
         step("Пропустить начальный экран", () -> {
