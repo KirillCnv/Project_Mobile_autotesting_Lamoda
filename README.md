@@ -1,4 +1,4 @@
-## <a target="_blank" href="https://github.com/DenZhICT/MobilePartOfQAProject">Проект: Mobile Автоматизации тестирования Lamoda</a>
+## Проект: Mobile Автоматизации тестирования Lamoda</a>
 
 ## :scroll: Содержание:
 
