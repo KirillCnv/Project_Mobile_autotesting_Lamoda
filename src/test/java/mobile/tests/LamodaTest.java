@@ -16,13 +16,13 @@ public class LamodaTest extends TestBase {
     LamodaAndroidTestPage lamodaAndroidTestPage = new LamodaAndroidTestPage();
 
     @Tag("lamoda")
-    @DisplayName("Проверка вкладки выбора пола")
+    @DisplayName("Проверка вкладки premium")
     @Test
     void examinationTabGender() {
         step("Пропустить начальный экран", () -> {
             lamodaAndroidTestPage.skipStartMenu();
         });
-        step("Проверить, что вкладка имеет название \"Женщины\"", () -> {
+        step("Проверить, что вкладка имеет название premium", () -> {
             lamodaAndroidTestPage.examinationTab();
         });
     }
