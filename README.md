@@ -76,7 +76,7 @@ lamodaTest
 
 <p align="center">
 <img title="Allure Test Ops Overview TaskList" src="images/screen/testOps.png">
-<img title="Allure Test Ops TestCase" src="images/screen/testCAse.png">
+<img title="Allure Test Ops TestCase" src="images/screen/testCase.png">
 </p>
 
 ## :grapes: Уведомление в Telegram при помощи бота
