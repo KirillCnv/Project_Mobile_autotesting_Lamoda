@@ -1,10 +1,13 @@
-package mobile.base;
+package mobile.tests;
 
 import com.codeborne.selenide.logevents.SelenideLogger;
 import io.qameta.allure.selenide.AllureSelenide;
 import mobile.config.MobileLocalDriverProvider;
 import mobile.config.MobileRemoteDriverProvider;
 import mobile.helpers.Attach;
+import mobile.page.FieldsRegistrationPage;
+import mobile.page.RatingAppPage;
+import mobile.page.TabPremiumPage;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
@@ -14,6 +17,9 @@ import static io.qameta.allure.Allure.step;
 
 public class TestBase {
 
+    public TabPremiumPage tabPremiumPage = new TabPremiumPage();
+    public RatingAppPage ratingAppPage = new RatingAppPage();
+    public FieldsRegistrationPage fieldsRegistrationPage = new FieldsRegistrationPage();
     @BeforeAll
     static void configure() throws Exception {
 

@@ -7,8 +7,17 @@ plugins {
 group 'qa.guru'
 version '1.0'
 
-allure {
-    report {
+def allureVersion = "2.19.0",
+    selenideVersion = "6.9.0",
+    restAssuredVersion = "5.1.1",
+    appiumVersion = "8.1.1",
+    assertJVersion = "3.23.1",
+    junitVersion = "5.9.0",
+    slf4jVersion = "1.7.32",
+    ownerVersion = "1.0.4",
+    commonsIoVersion = "2.11.0"
+
+allure { report {
         version.set("2.19.0")
     }
     adapter {
@@ -25,32 +34,20 @@ repositories {
     mavenCentral()
 }
 
-
 dependencies {
-    //JUnit 5
-    testImplementation('org.junit.jupiter:junit-jupiter:5.9.0')
-
-    //Selenide
-    testImplementation('com.codeborne:selenide:6.9.0')
-    testRuntimeOnly('org.slf4j:slf4j-simple:2.0.4')
-
-    //Allure
-    testImplementation('io.qameta.allure:allure-selenide:2.20.0')
-    testImplementation('io.qameta.allure:allure-rest-assured:2.20.0')
-
-    //API
-    testImplementation('io.rest-assured:rest-assured:5.3.0')
-
-    //Owner
-    testImplementation('org.aeonbits.owner:owner:1.0.12')
-
-    //Appium
-    testImplementation('io.appium:java-client:8.2.0')
-
-    //Apache Commons IO
-    testImplementation('commons-io:commons-io:2.11.0')
+    testImplementation(
+            "com.codeborne:selenide:$selenideVersion",
+            "io.qameta.allure:allure-selenide:$allureVersion",
+            "io.rest-assured:rest-assured:$restAssuredVersion",
+            "io.qameta.allure:allure-rest-assured:$allureVersion",
+            "org.assertj:assertj-core:$assertJVersion",
+            "io.appium:java-client:$appiumVersion",
+            "org.junit.jupiter:junit-jupiter:$junitVersion",
+            "org.slf4j:slf4j-simple:$slf4jVersion",
+            "org.aeonbits.owner:owner:$ownerVersion",
+            "commons-io:commons-io:$commonsIoVersion"
+    )
 }
-
 
 task lamodaTest(type: Test) {
     useJUnitPlatform {

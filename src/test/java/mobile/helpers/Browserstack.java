@@ -23,5 +23,4 @@ public class Browserstack {
                 .statusCode(200)
                 .extract().path("automation_session.video_url");
     }
-
 }
